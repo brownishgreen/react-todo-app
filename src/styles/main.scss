@@ -1,0 +1,17 @@
+@use './variables' as vars;
+@use './mixins' as mix;
+@use './reset';
+
+body {
+  font-family: vars.$font-stack;
+  background: #fafafa;
+}
+
+h1 {
+  color: vars.$primary-color;
+  @include mix.flex-center;
+}
+
+.app-title {
+  padding: 25px;
+}

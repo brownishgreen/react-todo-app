@@ -1,0 +1,71 @@
+/* src/styles/_reset.scss */
+
+/* Reset box sizing and remove default margin/padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base body styles */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  background-color: #fff;
+  color: #222;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove underline from links and inherit color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make media elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit font styles for form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+/* Set cursor pointer for buttons */
+button {
+  cursor: pointer;
+}
+
+/* Normalize headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  line-height: 1.2;
+}

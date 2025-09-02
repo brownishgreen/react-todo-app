@@ -1,9 +1,11 @@
+import { TodoList } from "./components/TodoList"
 
 function App() {
 
   return (
     <>
-      <h1>Hello Todo List</h1>
+      <h1 className="app-title">🌜 My Todo List 🌛</h1>
+      <TodoList />
     </>
   )
 }
