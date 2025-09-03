@@ -1,31 +1,13 @@
 import "./../styles/components/TodoItem.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
-
-export const Priority = {
-  HIGH: 'HIGH',
-  MEDIUM: 'MEDIUM',
-  LOW: 'LOW'
-} as const;
-
-export type Priority = typeof Priority[keyof typeof Priority];
+import type { TodoItemProps } from '../types/todo';
 
 
-export interface Props {
-  id: string;
-  title: string;
-  content: string;
-  priority: Priority;
-  resolved: boolean;
-  onToggle(id: string): void      //check
-  onEdit?(id: string): void       //edit
-  onDelete(id: string): void      //delete
-};
-
-export const TodoItem = (props: Props) => {
+export const TodoItem = (props: TodoItemProps) => {
   return (
     <>
-      <div className="todo-item">
+      <div className={`todo-item ${props.resolved ? 'item-resolved' : ''}`.trim()}>
         <div className="todo-item__title"><h4>{props.title}</h4></div>
         <div className="todo-item__content"><p>{props.content}</p></div>
         <div className="todo-item__actions">
