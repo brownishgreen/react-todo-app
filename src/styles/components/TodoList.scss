@@ -1,16 +1,25 @@
+@use '../variables' as vars;
+
+.section-container {
+  width: 70%;
+  margin: 0 auto;
+  padding:25px;
+  background-color: vars.$primary-color;
+  border-radius: 5px;
+}
+
 .section-high {
-  background: #ffdfdf;
-  padding: 1rem;
+  background: #c4d7e3;
+  border-radius: 5px 5px 0 0;
 }
 
 .section-medium {
-  background: #fcf6dd;
-  padding: 1rem;
+  background: #a1b6c4;
 }
 
 .section-low {
-  background: #dbfddb;
-  padding: 1rem;
+  background: #8c9fac;
+  border-radius: 0 0 5px 5px;
 }
 
 .section-title {
@@ -19,4 +28,6 @@
 
 .display-tool-item {
   display: flex;
+  padding: 0.8rem;
+  border-radius: 5px;
 }

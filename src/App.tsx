@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1 className="app-title">🌜 My Todo List 🌛</h1>
+      <h2 className="app-title">🌜 My Todo List 🌛</h2>
       <TodoList />
     </>
   )

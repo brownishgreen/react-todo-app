@@ -4,14 +4,15 @@
 
 body {
   font-family: vars.$font-stack;
-  background: #fafafa;
+  background: #d8e5f6;
 }
 
-h1 {
+h2 {
   color: vars.$primary-color;
   @include mix.flex-center;
 }
 
 .app-title {
   padding: 25px;
+  font-weight: bolder;
 }
